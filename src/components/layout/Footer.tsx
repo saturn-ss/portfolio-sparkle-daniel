@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Mail, MessageSquare } from "lucide-react";
+import { Github, Mail, MessageSquare, Telegram } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Container from "../ui-components/Container";
 
@@ -13,6 +13,12 @@ const Footer = () => {
       icon: Github, 
       href: "#", 
       label: "GitHub Profile" 
+    },
+    { 
+      name: "Telegram", 
+      icon: Telegram, 
+      href: "#", 
+      label: "Telegram Contact" 
     },
     { 
       name: "WhatsApp", 
@@ -31,6 +37,8 @@ const Footer = () => {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Projects", href: "/projects" },
+    { label: "Skills", href: "/skills" },
+    { label: "Resume", href: "/resume" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];

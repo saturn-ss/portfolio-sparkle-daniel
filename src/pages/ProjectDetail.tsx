@@ -38,7 +38,7 @@ const ProjectDetail = () => {
   return (
     <Layout>
       <article className="pt-8 md:pt-12 pb-20">
-        <Container>
+        <Container className="px-4 sm:px-6 md:px-8">
           <Link
             to="/projects"
             className="inline-flex items-center text-sm hover:text-primary transition-colors mb-8"
