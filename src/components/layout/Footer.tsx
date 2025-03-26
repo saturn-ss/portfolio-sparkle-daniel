@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Mail, MessageSquare, Telegram } from "lucide-react";
+import { Github, Mail, MessageSquare, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Container from "../ui-components/Container";
 
@@ -16,7 +16,7 @@ const Footer = () => {
     },
     { 
       name: "Telegram", 
-      icon: Telegram, 
+      icon: Send, 
       href: "#", 
       label: "Telegram Contact" 
     },

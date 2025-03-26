@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Container from "@/components/ui-components/Container";
-import { Github, Mail, Telegram, MessageSquare } from "lucide-react";
+import { Github, Mail, Send, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
@@ -77,7 +77,7 @@ const Contact = () => {
       href: "#",
     },
     {
-      icon: Telegram,
+      icon: Send,
       label: "Telegram",
       value: "@danielxu",
       href: "#",
