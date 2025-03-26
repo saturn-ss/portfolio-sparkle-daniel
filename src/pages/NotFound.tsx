@@ -1,26 +1,33 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import { Link } from "react-router-dom";
+import Layout from "@/components/layout/Layout";
+import Container from "@/components/ui-components/Container";
+import { cn } from "@/lib/utils";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
-    </div>
+    <Layout>
+      <section className="section-padding min-h-[70vh] flex items-center justify-center">
+        <Container className="text-center max-w-2xl">
+          <h1 className="text-9xl font-bold mb-6 animate-fade-in">404</h1>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in [animation-delay:0.1s]">
+            Page Not Found
+          </h2>
+          <p className="text-muted-foreground mb-8 animate-fade-in [animation-delay:0.2s]">
+            The page you are looking for doesn't exist or has been moved.
+          </p>
+          <Link
+            to="/"
+            className={cn(
+              "inline-block px-8 py-3 rounded-lg font-medium animate-fade-in [animation-delay:0.3s]",
+              "bg-primary text-primary-foreground hover:opacity-90 transition-all"
+            )}
+          >
+            Return Home
+          </Link>
+        </Container>
+      </section>
+    </Layout>
   );
 };
 
