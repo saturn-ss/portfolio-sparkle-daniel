@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import MouseAnimation from "../ui-components/MouseAnimation";
+import AutoPlayAudio from "../ui-components/AutoPlayAudio";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -21,6 +23,8 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <main className="flex-grow pt-20 md:pt-24">{children}</main>
       <Footer />
+      <MouseAnimation />
+      <AutoPlayAudio />
     </div>
   );
 };

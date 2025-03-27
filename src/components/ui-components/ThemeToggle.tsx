@@ -13,7 +13,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
         "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300",
         theme === "dark" ? "bg-secondary" : 
         theme === "light" ? "bg-secondary" : 
-        "bg-green-800/20",
+        "bg-green-600/30",
         className
       )}
       aria-label="Toggle theme"
@@ -23,7 +23,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
       ) : theme === "light" ? (
         <Moon size={20} className="text-primary animate-fade-in" />
       ) : (
-        <Leaf size={20} className="text-green-500 animate-fade-in" />
+        <Leaf size={20} className="text-green-400 animate-fade-in" />
       )}
     </button>
   );
