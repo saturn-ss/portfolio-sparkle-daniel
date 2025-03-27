@@ -1,5 +1,5 @@
 
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Leaf } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { cn } from "@/lib/utils";
 
@@ -10,16 +10,20 @@ const ThemeToggle = ({ className }: { className?: string }) => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300",
-        theme === "dark" ? "bg-secondary" : "bg-secondary",
+        "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300",
+        theme === "dark" ? "bg-secondary" : 
+        theme === "light" ? "bg-secondary" : 
+        "bg-green-800/20",
         className
       )}
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
-        <Sun size={22} className="text-primary animate-fade-in" />
+        <Sun size={20} className="text-primary animate-fade-in" />
+      ) : theme === "light" ? (
+        <Moon size={20} className="text-primary animate-fade-in" />
       ) : (
-        <Moon size={22} className="text-primary animate-fade-in" />
+        <Leaf size={20} className="text-green-500 animate-fade-in" />
       )}
     </button>
   );
