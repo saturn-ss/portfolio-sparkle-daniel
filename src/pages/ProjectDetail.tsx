@@ -82,46 +82,40 @@ const ProjectDetail = () => {
           </header>
           
           <div className="prose prose-lg dark:prose-invert max-w-none animate-fade-in [animation-delay:0.4s]">
-            <h2 className="text-2xl font-bold text-foreground">Project Overview</h2>
+            <h2 className="text-2xl font-bold text-foreground">🍬 Project Overview</h2>
             <p>
-              This project for {project.title} involved creating a custom Shopify store that aligned with their brand vision and business objectives. The client needed a solution that would showcase their products effectively while providing an intuitive shopping experience for their customers.
+              Sugar Rush by Steph – Product Page Optimization. This project involved working on the design and 
+              development of a dynamic and user-friendly product detail page to enhance the shopping experience and boost conversion.
             </p>
             
-            <h2 className="text-2xl font-bold text-foreground">The Challenge</h2>
-            <p>
-              The client was facing challenges with their previous e-commerce platform, including poor conversion rates, limited customization options, and difficulties managing their inventory. They needed a more flexible and user-friendly solution that would help them scale their business.
-            </p>
-            
-            <h2 className="text-2xl font-bold text-foreground">The Solution</h2>
-            <p>
-              I developed a custom Shopify store that addressed all of the client's pain points. The solution included:
-            </p>
+            <h2 className="text-2xl font-bold text-foreground">🎯 Objectives</h2>
             <ul>
-              <li>A custom theme designed to showcase their unique product offerings</li>
-              <li>Optimized product pages with enhanced imagery and detailed descriptions</li>
-              <li>Streamlined checkout process to improve conversion rates</li>
-              <li>Integration with their inventory management system</li>
-              <li>Mobile-responsive design for seamless shopping on any device</li>
+              <li>Improve UX/UI for product pages, especially when landing directly on specific variants.</li>
+              <li>Ensure seamless integration with Shopify's theme structure and dynamic URL parameters.</li>
+              <li>Maintain brand consistency and playfulness aligned with Sugar Rush by Steph's aesthetic.</li>
             </ul>
             
-            <h2 className="text-2xl font-bold text-foreground">The Results</h2>
-            <p>
-              Following the launch of their new Shopify store, the client saw significant improvements in their key metrics:
-            </p>
+            <h2 className="text-2xl font-bold text-foreground">✅ Key Features Implemented</h2>
             <ul>
-              <li>35% increase in conversion rate</li>
-              <li>28% decrease in cart abandonment</li>
-              <li>42% increase in average order value</li>
-              <li>Improved customer satisfaction and repeat purchases</li>
+              <li>Variant-specific landing: Automatically displays the selected variant via URL (e.g., flavor or box size).</li>
+              <li>Responsive design: Ensured flawless performance across mobile, tablet, and desktop.</li>
+              <li>Custom styling: Matched the vibrant, colorful, and sweet-themed brand identity.</li>
+              <li>Speed optimizations: Compressed assets and streamlined scripts for faster load times.</li>
+              <li>Conversion-focused layout: Prioritized "Add to Cart" visibility and clear product information.</li>
             </ul>
             
-            <h2 className="text-2xl font-bold text-foreground">Technologies Used</h2>
+            <h2 className="text-2xl font-bold text-foreground">🛠️ Role & Contribution</h2>
+            <p>
+              I worked on the design and development of the product detail page, focusing on the user experience 
+              and ensuring that the page was optimized for conversions. This included implementing variant-specific 
+              landing pages, responsive design, and custom styling to match the brand identity.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-foreground">🧰 Tools & Tech Used</h2>
             <ul>
-              <li>Shopify Liquid</li>
-              <li>JavaScript & jQuery</li>
-              <li>HTML5 & CSS3</li>
-              <li>Shopify APIs</li>
-              <li>Custom App Development</li>
+              <li>Shopify (Online Store 2.0 / Liquid)</li>
+              <li>HTML / CSS / JavaScript</li>
+              <li>Shopify Theme Editor</li>
             </ul>
           </div>
         </Container>
