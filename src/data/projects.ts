@@ -5,6 +5,11 @@ export const projects = [
     title: "Luxury Fashion Boutique",
     description: "Custom Shopify store for a high-end fashion retailer with advanced filtering and personalized recommendations.",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1470&auto=format&fit=crop",
+    additionalImages: [
+      "https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=1470&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1465199549974-7d82de6e2830?q=80&w=1471&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1449247666642-264389f5f5b1?q=80&w=1471&auto=format&fit=crop"
+    ],
     tags: ["shopify", "theme", "custom"],
     url: "https://www.neimanmarcus.com/"
   },

@@ -4,17 +4,16 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Tag as TagIcon } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import Container from "@/components/ui-components/Container";
+import ProjectImageCarousel from "@/components/ui-components/ProjectImageCarousel";
 import { projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [project, setProject] = useState(projects.find(p => p.id === parseInt(id || "0")));
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     setProject(projects.find(p => p.id === parseInt(id || "0")));
-    setImageLoaded(false);
     window.scrollTo(0, 0);
   }, [id]);
 
@@ -63,21 +62,11 @@ const ProjectDetail = () => {
               ))}
             </div>
             
-            <div className="relative rounded-xl overflow-hidden aspect-video mb-8 animate-fade-in [animation-delay:0.2s]">
-              <div className={cn(
-                "absolute inset-0 bg-muted/30 backdrop-blur-sm transition-all duration-500",
-                imageLoaded ? "opacity-0" : "opacity-100"
-              )} />
-              <img
-                src={project.image}
-                alt={project.title}
-                className={cn(
-                  "w-full h-full object-cover transition-all duration-700 ease-out",
-                  imageLoaded ? "opacity-100" : "opacity-0"
-                )}
-                onLoad={() => setImageLoaded(true)}
-              />
-            </div>
+            <ProjectImageCarousel 
+              mainImage={project.image} 
+              title={project.title} 
+              additionalImages={project.additionalImages} 
+            />
             
             <div className="flex items-center justify-between animate-fade-in [animation-delay:0.3s]">
               <p className="text-lg font-medium">Client Project</p>
@@ -93,17 +82,17 @@ const ProjectDetail = () => {
           </header>
           
           <div className="prose prose-lg dark:prose-invert max-w-none animate-fade-in [animation-delay:0.4s]">
-            <h2>Project Overview</h2>
+            <h2 className="text-2xl font-bold text-foreground">Project Overview</h2>
             <p>
               This project for {project.title} involved creating a custom Shopify store that aligned with their brand vision and business objectives. The client needed a solution that would showcase their products effectively while providing an intuitive shopping experience for their customers.
             </p>
             
-            <h2>The Challenge</h2>
+            <h2 className="text-2xl font-bold text-foreground">The Challenge</h2>
             <p>
               The client was facing challenges with their previous e-commerce platform, including poor conversion rates, limited customization options, and difficulties managing their inventory. They needed a more flexible and user-friendly solution that would help them scale their business.
             </p>
             
-            <h2>The Solution</h2>
+            <h2 className="text-2xl font-bold text-foreground">The Solution</h2>
             <p>
               I developed a custom Shopify store that addressed all of the client's pain points. The solution included:
             </p>
@@ -115,7 +104,7 @@ const ProjectDetail = () => {
               <li>Mobile-responsive design for seamless shopping on any device</li>
             </ul>
             
-            <h2>The Results</h2>
+            <h2 className="text-2xl font-bold text-foreground">The Results</h2>
             <p>
               Following the launch of their new Shopify store, the client saw significant improvements in their key metrics:
             </p>
@@ -126,7 +115,7 @@ const ProjectDetail = () => {
               <li>Improved customer satisfaction and repeat purchases</li>
             </ul>
             
-            <h2>Technologies Used</h2>
+            <h2 className="text-2xl font-bold text-foreground">Technologies Used</h2>
             <ul>
               <li>Shopify Liquid</li>
               <li>JavaScript & jQuery</li>
