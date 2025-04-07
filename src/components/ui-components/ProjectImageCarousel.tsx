@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
-import { useCarousel } from "@/components/ui/carousel";
 
 interface ProjectImageCarouselProps {
   mainImage: string;
@@ -13,8 +12,8 @@ interface ProjectImageCarouselProps {
 const ProjectImageCarousel = ({ mainImage, title, additionalImages = [] }: ProjectImageCarouselProps) => {
   const [imagesLoaded, setImagesLoaded] = useState<{[key: number]: boolean}>({});
   const allImages = [mainImage, ...(additionalImages || [])];
-  const [api, setApi] = useState<ReturnType<typeof useCarousel>["api"]>();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [api, setApi] = useState<any>(null);
   
   const handleImageLoad = (index: number) => {
     setImagesLoaded(prev => ({
@@ -49,7 +48,7 @@ const ProjectImageCarousel = ({ mainImage, title, additionalImages = [] }: Proje
         <CarouselContent>
           {allImages.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative aspect-video overflow-hidden rounded-xl">
+              <div className="relative aspect-video">
                 <div className={cn(
                   "absolute inset-0 bg-muted/30 backdrop-blur-sm transition-all duration-500",
                   imagesLoaded[index] ? "opacity-0" : "opacity-100"
@@ -59,7 +58,7 @@ const ProjectImageCarousel = ({ mainImage, title, additionalImages = [] }: Proje
                   alt={`${title} - image ${index + 1}`}
                   className={cn(
                     "w-full h-full object-cover transition-all duration-700 ease-out",
-                    imagesLoaded[index] ? "opacity-100 scale-100" : "opacity-0 scale-105"
+                    imagesLoaded[index] ? "opacity-100" : "opacity-0"
                   )}
                   onLoad={() => handleImageLoad(index)}
                 />
