@@ -33,6 +33,105 @@ const ProjectDetail = () => {
     );
   }
 
+  const projectContent = id === "2" ? (
+    <>
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🌶️ Project Overview</h2>
+      <p className="text-lg mb-6">
+        I led the full development and customization of Tuyo, a modern Shopify store focused on personalized products 
+        for the Brazilian market. This project involved tailoring the store's UI/UX to align with the brand's vibrant 
+        identity while ensuring performance and mobile responsiveness.
+      </p>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🎯 Objectives</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>Elevate TUYO's brand presence through a visually immersive and flavor-forward design.</li>
+        <li>Create an intuitive and responsive e-commerce experience.</li>
+        <li>Emphasize the artisanal quality and gourmet appeal of the products.</li>
+        <li>Facilitate seamless online shopping and checkout flow.</li>
+      </ul>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">✅ Key Features Implemented</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>
+          <span className="font-medium">Homepage Design:</span> Featured high-quality lifestyle imagery, bold typography, 
+          and hero banners to reflect the brand's premium positioning.
+        </li>
+        <li>
+          <span className="font-medium">Product Presentation:</span> Designed clean, scroll-friendly product pages with 
+          focus on packaging, ingredients, and pairings.
+        </li>
+        <li>
+          <span className="font-medium">Mobile Optimization:</span> Ensured fast, frictionless experience across all devices.
+        </li>
+        <li>
+          <span className="font-medium">UX/UI Enhancements:</span> Smooth transitions and hover effects for a modern, 
+          interactive feel. Sticky headers and call-to-actions to keep important options accessible.
+        </li>
+        <li>
+          <span className="font-medium">Checkout Optimization:</span> Streamlined cart and checkout pages to reduce drop-offs.
+        </li>
+      </ul>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🛠️ Role & Contribution</h2>
+      <p className="text-lg mb-6">
+        Contributed to the design, development, and optimization of a premium e-commerce platform focused on enhancing 
+        brand storytelling and conversion across product pages and the homepage.
+      </p>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🧰 Tools & Tech Used</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>Shopify / Shopify Plus</li>
+        <li>Liquid (Shopify templating)</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Adobe XD / Figma</li>
+      </ul>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">💫 Impact</h2>
+      <p className="text-lg mb-6">
+        The result is a clean, intuitive shopping experience tailored to Tuyo's target audience, driving both 
+        conversions and customer engagement from day one.
+      </p>
+    </>
+  ) : (
+    <>
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🍬 Project Overview</h2>
+      <p className="text-lg mb-6">
+        Sugar Rush by Steph – Product Page Optimization. This project involved working on the design and 
+        development of a dynamic and user-friendly product detail page to enhance the shopping experience and boost conversion.
+      </p>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🎯 Objectives</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>Improve UX/UI for product pages, especially when landing directly on specific variants.</li>
+        <li>Ensure seamless integration with Shopify's theme structure and dynamic URL parameters.</li>
+        <li>Maintain brand consistency and playfulness aligned with Sugar Rush by Steph's aesthetic.</li>
+      </ul>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">✅ Key Features Implemented</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>Variant-specific landing: Automatically displays the selected variant via URL (e.g., flavor or box size).</li>
+        <li>Responsive design: Ensured flawless performance across mobile, tablet, and desktop.</li>
+        <li>Custom styling: Matched the vibrant, colorful, and sweet-themed brand identity.</li>
+        <li>Speed optimizations: Compressed assets and streamlined scripts for faster load times.</li>
+        <li>Conversion-focused layout: Prioritized "Add to Cart" visibility and clear product information.</li>
+      </ul>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🛠️ Role & Contribution</h2>
+      <p className="text-lg mb-6">
+        I worked on the design and development of the product detail page, focusing on the user experience 
+        and ensuring that the page was optimized for conversions. This included implementing variant-specific 
+        landing pages, responsive design, and custom styling to match the brand identity.
+      </p>
+      
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">🧰 Tools & Tech Used</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
+        <li>Shopify (Online Store 2.0 / Liquid)</li>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Shopify Theme Editor</li>
+      </ul>
+    </>
+  );
+
   return (
     <Layout>
       <article className="pt-8 md:pt-12 pb-20">
@@ -81,41 +180,7 @@ const ProjectDetail = () => {
           </header>
           
           <div className="prose prose-lg dark:prose-invert max-w-none animate-fade-in [animation-delay:0.4s]">
-            <h2 className="text-2xl font-bold text-foreground">🍬 Project Overview</h2>
-            <p>
-              Sugar Rush by Steph – Product Page Optimization. This project involved working on the design and 
-              development of a dynamic and user-friendly product detail page to enhance the shopping experience and boost conversion.
-            </p>
-            
-            <h2 className="text-2xl font-bold text-foreground">🎯 Objectives</h2>
-            <ul>
-              <li>Improve UX/UI for product pages, especially when landing directly on specific variants.</li>
-              <li>Ensure seamless integration with Shopify's theme structure and dynamic URL parameters.</li>
-              <li>Maintain brand consistency and playfulness aligned with Sugar Rush by Steph's aesthetic.</li>
-            </ul>
-            
-            <h2 className="text-2xl font-bold text-foreground">✅ Key Features Implemented</h2>
-            <ul>
-              <li>Variant-specific landing: Automatically displays the selected variant via URL (e.g., flavor or box size).</li>
-              <li>Responsive design: Ensured flawless performance across mobile, tablet, and desktop.</li>
-              <li>Custom styling: Matched the vibrant, colorful, and sweet-themed brand identity.</li>
-              <li>Speed optimizations: Compressed assets and streamlined scripts for faster load times.</li>
-              <li>Conversion-focused layout: Prioritized "Add to Cart" visibility and clear product information.</li>
-            </ul>
-            
-            <h2 className="text-2xl font-bold text-foreground">🛠️ Role & Contribution</h2>
-            <p>
-              I worked on the design and development of the product detail page, focusing on the user experience 
-              and ensuring that the page was optimized for conversions. This included implementing variant-specific 
-              landing pages, responsive design, and custom styling to match the brand identity.
-            </p>
-            
-            <h2 className="text-2xl font-bold text-foreground">🧰 Tools & Tech Used</h2>
-            <ul>
-              <li>Shopify (Online Store 2.0 / Liquid)</li>
-              <li>HTML / CSS / JavaScript</li>
-              <li>Shopify Theme Editor</li>
-            </ul>
+            {projectContent}
           </div>
         </Container>
       </article>

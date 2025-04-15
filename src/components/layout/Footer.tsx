@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Mail, MessageSquare, Send } from "lucide-react";
+import { Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Container from "../ui-components/Container";
 
@@ -8,24 +8,6 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { 
-      name: "GitHub", 
-      icon: Github, 
-      href: "#", 
-      label: "GitHub Profile" 
-    },
-    { 
-      name: "Telegram", 
-      icon: Send, 
-      href: "#", 
-      label: "Telegram Contact" 
-    },
-    { 
-      name: "WhatsApp", 
-      icon: MessageSquare, 
-      href: "#", 
-      label: "WhatsApp Contact" 
-    },
     { 
       name: "Email", 
       icon: Mail, 
@@ -39,7 +21,6 @@ const Footer = () => {
     { label: "Projects", href: "/projects" },
     { label: "Skills", href: "/skills" },
     { label: "Resume", href: "/resume" },
-    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
 
