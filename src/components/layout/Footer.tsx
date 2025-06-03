@@ -10,7 +10,7 @@ const Footer = () => {
     { 
       name: "Email", 
       icon: Mail, 
-      href: "mailto:web.hero218@gmail.com", 
+      href: "FidenzioNucci@outlook.com", 
       label: "Email Contact" 
     },
     {
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link to="/" className="text-xl font-medium inline-block">
-              Daniel<span className="text-primary"> Xu</span>
+              Fidenzio<span className="text-primary"> Nucci</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-md">
               Shopify developer with 4 years of experience building high-performance, accessible e-commerce stores with exceptional code quality and lightning-fast load times.
@@ -119,7 +119,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Daniel Xu. All rights reserved.
+            © {currentYear} Fidenzio Nucci. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground mt-2 md:mt-0">
             Performance-Focused Shopify Expert

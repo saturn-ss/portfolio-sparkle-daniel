@@ -18,12 +18,12 @@ const ThemeToggle = ({ className }: { className?: string }) => {
       )}
       aria-label="Toggle theme"
     >
-      {theme === "dark" ? (
-        <Sun size={20} className="text-primary animate-fade-in" />
-      ) : theme === "light" ? (
-        <Moon size={20} className="text-primary animate-fade-in" />
-      ) : (
+      {theme === "light" ? (
         <Leaf size={20} className="text-primary-foreground animate-fade-in" />
+      ) : theme === "dark" ? (
+        <Sun size={20} className="text-primary animate-fade-in" />
+      ) : (
+        <Moon size={20} className="text-primary animate-fade-in" />
       )}
     </button>
   );

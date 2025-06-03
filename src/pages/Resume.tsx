@@ -96,7 +96,7 @@ const Resume = () => {
         <Container className="space-y-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-left max-w-2xl">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 animate-fade-in">Daniel Xu</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 animate-fade-in">Fidenzio Nucci</h1>
               <p className="text-xl text-primary font-medium mb-4 animate-fade-in [animation-delay:0.1s]">
                 Shopify Developer & E-commerce Specialist
               </p>
@@ -107,7 +107,7 @@ const Resume = () => {
             </div>
             <a
               href="#"
-              download="Daniel_Xu_Resume.pdf"
+              download="Fidenzio_Nucci_Resume.pdf"
               className={cn(
                 "flex items-center gap-2 px-6 py-3 rounded-lg transition-colors whitespace-nowrap shrink-0",
                 "bg-primary text-primary-foreground hover:opacity-90",
@@ -127,7 +127,7 @@ const Resume = () => {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <span className="text-muted-foreground w-20">Email:</span>
-                      <a href="mailto:web.hero218@gmail.com" className="text-primary hover:underline">
+                      <a href="FidenzioNucci@outlook.com" className="text-primary hover:underline">
                         web.hero218@gmail.com
                       </a>
                     </li>

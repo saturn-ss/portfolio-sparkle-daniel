@@ -16,27 +16,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: "TUYO – Premium Condiments & Sauces",
-    description: "Premium e-commerce platform for specialty sauces & condiments focused on brand storytelling and conversion optimization.",
-    image: "/lovable-uploads/ea52e567-348c-42de-88b4-e774ed8088c0.png",
-    additionalImages: [
-      "/lovable-uploads/39f634bb-7b7e-4f2a-bef0-5bda0a66234f.png",
-      "/lovable-uploads/f937d70d-d23b-4e7f-a82d-8373c92509d8.png",
-      "/lovable-uploads/993fe61e-1001-4570-ab0a-50ad7b6c8540.png",
-      "/lovable-uploads/e44c23b1-2820-4378-a652-e225c1578935.png"
-    ],
-    tags: ["shopify", "theme", "custom", "food"],
-    url: "https://www.tuyo.com.br"
-  },
-  {
-    id: 3,
     title: "Champion System – Custom Kit Ordering",
     description: "Custom Shopify storefront for team-based custom apparel ordering with personalization features.",
-    image: "/lovable-uploads/39f634bb-7b7e-4f2a-bef0-5bda0a66234f.png",
+    image: "/lovable-uploads/f937d70d-d23b-4e7f-a82d-8373c92509d8.png",
     additionalImages: [
-      "/lovable-uploads/e44c23b1-2820-4378-a652-e225c1578935.png",
-      "/lovable-uploads/f937d70d-d23b-4e7f-a82d-8373c92509d8.png",
+      "/lovable-uploads/39f634bb-7b7e-4f2a-bef0-5bda0a66234f.png",
       "/lovable-uploads/993fe61e-1001-4570-ab0a-50ad7b6c8540.png",
+      "/lovable-uploads/e44c23b1-2820-4378-a652-e225c1578935.png",
       "/lovable-uploads/ea52e567-348c-42de-88b4-e774ed8088c0.png"
     ],
     tags: ["shopify", "theme", "custom", "apparel"],
