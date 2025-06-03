@@ -50,7 +50,7 @@ const Header = () => {
         isScrolled ? "glass backdrop-blur-lg" : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between relative z-50">
         <Link to="/" className="text-xl md:text-2xl font-bold">
           Fidenzio<span className="text-primary"> Nucci</span>
         </Link>
@@ -90,7 +90,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-background/95 backdrop-blur-md flex flex-col z-40 md:hidden pt-20 px-4 pb-6 transition-all duration-300 ease-in-out",
+          "fixed inset-0 bg-background/95 backdrop-blur-md flex flex-col z-40 md:hidden pt-20 px-4 pb-6 transition-all duration-300 ease-in-out h-screen",
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       >

@@ -24,10 +24,10 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission to web.hero218@gmail.com
+    // Simulate form submission to FidenzioNucci@outlook.com
     setTimeout(() => {
       toast.success("Message sent successfully!", {
-        description: "Your message has been sent to web.hero218@gmail.com",
+        description: "Your message has been sent to FidenzioNucci@outlook.com",
       });
       setFormData({
         name: "",
@@ -103,11 +103,11 @@ const Contact = () => {
               </div>
               <div>
                 <p className="font-medium mb-1">Email</p>
-                <p className="text-sm text-muted-foreground">web.hero218@gmail.com</p>
+                <p className="text-sm text-muted-foreground">FidenzioNucci@outlook.com</p>
               </div>
             </div>
 
-            <div className="bg-secondary/50 p-6 rounded-lg mb-8">
+            <div className="bg-secondary/50 p-6 rounded-lg mb-8 hidden">
               <h3 className="font-medium mb-4">Connect with me</h3>
               <div className="flex flex-wrap gap-3">
                 {socialLinks.map((social) => (

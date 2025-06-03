@@ -128,7 +128,7 @@ const Resume = () => {
                     <li className="flex items-start">
                       <span className="text-muted-foreground w-20">Email:</span>
                       <a href="FidenzioNucci@outlook.com" className="text-primary hover:underline">
-                        web.hero218@gmail.com
+                        FidenzioNucci@outlook.com
                       </a>
                     </li>
                     <li className="flex items-start">
