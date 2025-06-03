@@ -133,7 +133,7 @@ const Resume = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-muted-foreground w-20">Location:</span>
-                      <span>San Francisco, CA</span>
+                      <span>Caronno Pertusella, Lombardy, Italy</span>
                     </li>
                   </ul>
                 </div>
@@ -181,40 +181,33 @@ const Resume = () => {
             <div className="lg:col-span-2 space-y-12 animate-fade-in [animation-delay:0.4s]">
               <ResumeSection title="Work Experience" icon={Briefcase}>
                 <TimelineItem
-                  title="Senior Shopify Developer"
-                  company="E-commerce Solutions Inc."
-                  location="San Francisco, CA"
-                  period="Jan 2022 - Present"
-                  description="Lead developer for high-profile Shopify stores with a focus on performance optimization and conversion rate improvement. Implemented custom checkout solutions that increased conversion rates by 35% on average."
+                  title="Shopify Developer"
+                  company="Echt Inc"
+                  location="Australia"
+                  period="Jan 2023 - Mar 2025"
+                  description="Played a key role in elevating ECHT’s Shopify experience—one of Australia's fastest-growing activewear brands—by engineering a sleek, high-conversion storefront built for performance and scale. Overhauled core theme architecture to reduce load times by 35%, enabling smooth handling of high-volume traffic during major product drops. Designed and implemented custom UX features like live inventory indicators, rapid-add cart flows, and mobile-first optimizations that helped drive a 20%+ uplift in conversion. Partnered closely with ECHT’s creative and marketing teams to launch high-impact, campaign-driven pages that captured the brand’s athletic aesthetic while supporting global expansion."
                 />
                 <TimelineItem
                   title="Shopify Developer"
-                  company="Digital Stores Agency"
-                  location="Los Angeles, CA"
-                  period="Mar 2020 - Dec 2021"
-                  description="Developed custom Shopify themes and apps for clients across various industries. Integrated third-party services and optimized existing stores for better performance and user experience."
-                />
-                <TimelineItem
-                  title="Frontend Developer"
-                  company="Web Solutions Ltd."
-                  location="Seattle, WA"
-                  period="Jun 2019 - Feb 2020"
-                  description="Worked on responsive web designs and implemented frontend solutions using modern JavaScript frameworks. Collaborated with design and backend teams to deliver cohesive web applications."
+                  company="Sugar Rush by Steph"
+                  location="Australia"
+                  period="Mar 2020 - Dec 2022"
+                  description="Spearheaded the Shopify development for Sugar Rush by Steph over a three-year period, scaling the store to support a 300% growth in online orders. Designed and implemented a fully custom theme that reflected the brand’s vibrant, playful identity while achieving a 40% improvement in page load speed. Integrated advanced features like product personalization, gifting flows, and limited-time drops, contributing to a 25% increase in conversion rates. Collaborated with the client on continuous optimizations, seasonal campaigns, and backend enhancements to ensure a seamless and scalable e-commerce experience."
                 />
               </ResumeSection>
               
               <ResumeSection title="Education" icon={GraduationCap}>
                 <EducationItem
                   degree="Bachelor of Science in Computer Science"
-                  institution="University of Washington"
-                  location="Seattle, WA"
-                  period="2015 - 2019"
+                  institution="Marche Polytechnic Universitym"
+                  location="Ancona, Itaily"
+                  period="2012 - 2017"
                 />
                 <EducationItem
                   degree="Shopify Partner Certification"
                   institution="Shopify Academy"
                   location="Online"
-                  period="2020"
+                  period="2018"
                 />
               </ResumeSection>
             </div>
