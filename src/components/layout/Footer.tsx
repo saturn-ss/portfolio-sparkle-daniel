@@ -21,7 +21,6 @@ const Footer = () => {
     { label: "Projects", href: "/projects" },
     { label: "Skills", href: "/skills" },
     { label: "Resume", href: "/resume" },
-    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -34,7 +33,7 @@ const Footer = () => {
               Daniel<span className="text-primary"> Xu</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-md">
-              Shopify developer with 4 years of experience building high-converting e-commerce stores.
+              Shopify developer with 4 years of experience building high-performance, accessible e-commerce stores with exceptional code quality and lightning-fast load times.
             </p>
           </div>
           
@@ -81,7 +80,7 @@ const Footer = () => {
             © {currentYear} Daniel Xu. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground mt-2 md:mt-0">
-            Shopify Expert & E-commerce Developer
+            Performance-Focused Shopify Expert
           </p>
         </div>
       </Container>

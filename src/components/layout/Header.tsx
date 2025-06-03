@@ -15,7 +15,6 @@ const Header = () => {
     { path: "/projects", label: "Projects" },
     { path: "/skills", label: "Skills" },
     { path: "/resume", label: "Resume" },
-    { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -52,7 +51,7 @@ const Header = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link to="/" className="text-xl md:text-2xl font-medium">
+        <Link to="/" className="text-xl md:text-2xl font-bold">
           Daniel<span className="text-primary"> Xu</span>
         </Link>
 
