@@ -105,9 +105,9 @@ const Resume = () => {
                 Specializing in custom theme development, third-party integrations, and performance optimization.
               </p>
             </div>
-            <a
-              href="#"
-              download="Fidenzio_Nucci_Resume.pdf"
+            {/* <a
+              href="/Fidenzio_Nucci.pdf"
+              download="Fidenzio_Nucci.pdf"
               className={cn(
                 "flex items-center gap-2 px-6 py-3 rounded-lg transition-colors whitespace-nowrap shrink-0",
                 "bg-primary text-primary-foreground hover:opacity-90",
@@ -116,7 +116,7 @@ const Resume = () => {
             >
               <Download size={18} />
               Download Resume
-            </a>
+            </a> */}
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
