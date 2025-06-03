@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,33 +66,33 @@
   }
   
   .green {
-    --background: 140 25% 8%;
-    --foreground: 142 15% 92%;
+    --background: 142 45% 96%;
+    --foreground: 150 35% 20%;
     
-    --card: 140 30% 10%;
-    --card-foreground: 142 15% 92%;
+    --card: 142 40% 98%;
+    --card-foreground: 150 35% 20%;
     
-    --popover: 140 25% 8%;
-    --popover-foreground: 142 15% 92%;
+    --popover: 142 45% 96%;
+    --popover-foreground: 150 35% 20%;
     
-    --primary: 142 65% 45%;
-    --primary-foreground: 140 25% 8%;
+    --primary: 142 75% 35%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 140 20% 15%;
-    --secondary-foreground: 142 15% 85%;
+    --secondary: 142 25% 88%;
+    --secondary-foreground: 142 65% 25%;
     
-    --muted: 140 15% 18%;
-    --muted-foreground: 142 10% 65%;
+    --muted: 142 25% 90%;
+    --muted-foreground: 150 20% 45%;
     
-    --accent: 140 25% 20%;
-    --accent-foreground: 142 65% 45%;
+    --accent: 142 50% 85%;
+    --accent-foreground: 142 75% 25%;
     
     --destructive: 0 85% 55%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 140 20% 25%;
-    --input: 140 20% 25%;
-    --ring: 142 65% 45%;
+    --border: 142 30% 82%;
+    --input: 142 30% 82%;
+    --ring: 142 75% 35%;
   }
 }
 
